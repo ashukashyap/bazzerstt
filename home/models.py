@@ -39,6 +39,10 @@ class Record(models.Model):
     gali = models.CharField(max_length=200)
     shrignash = models.CharField(max_length=100)
     delhibazzer = models.CharField(max_length=200)
+    fridabad = models.CharField(max_length=100)
+    gaziyabad = models.CharField(max_length=100)
+    disawer = models.CharField(max_length=100)
+    dhanlaxmi = models.CharField(max_length=100)
 
 
     def __str__(self):
