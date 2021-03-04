@@ -28,6 +28,7 @@ class Table(models.Model):
     deshwer = models.CharField(max_length=100)
     fridabad = models.CharField(max_length=200)
     gaziybad = models.CharField(max_length=100)
+    gali = models.CharField(max_length=200)
     
 
 
