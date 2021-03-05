@@ -54,7 +54,7 @@ class Record(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone = models.IntegerField()
+    phone = models.CharField(max_length=20)
     desc = models.TextField()
 
 
