@@ -34,25 +34,24 @@ def home(request):
 
 
 def contact(request):
-    
-    if request.method =="POST":
+    if request.method == 'POST':
         name = request.POST['name']
         email = request.POST['email']
         phone = request.POST['phone']
         desc = request.POST['desc']
+
+        contact = Contact(name=name,email=email,phone=phone,desc=desc)
+        contact.save()
+        messages.success(request, f'Your Message has been sand.')
+    context = {'contact':'active'}    
+
+    return render(request,'contact.html', context)
+    
+   
+
         
 
-        if len(phone)<10:
-            messages.error(request, 'Plese fill the form Correctly.!')
-
-        else:
-            contact = Contact(name=name,email=email,phone=phone,desc=desc)
-            contact.save()
-            messages.success(request, 'Your message has been Sand.!')
-
-        
-
-    return render(request,'contact.html')
+    
 
 
 
