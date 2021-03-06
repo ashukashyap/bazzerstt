@@ -13,14 +13,14 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class Rahul(models.Model):
-    name = models.CharField(max_length=200)
-    time = models.CharField(max_length=200)
-    no = models.CharField(max_length=100)  
-    stor = models.TextField()   
+# class Rahul(models.Model):
+#     name = models.CharField(max_length=200)
+#     time = models.CharField(max_length=200)
+#     row = models.TextField()  
+#     stor = models.TextField()   
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
         
 
 class Table(models.Model):

@@ -9,7 +9,7 @@ from django.contrib import messages
 
 def home(request):
     sager = Post.objects.all()
-    ren = Rahul.objects.all()
+    # ren = Rahul.objects.all()
     tab = Table.objects.all()
     sonu = Record.objects.all()
     deep = blog.objects.all()
@@ -22,7 +22,7 @@ def home(request):
 
     context = {
         'sug': sager,
-        'mu': ren,
+        # 'mu': ren,
         'read':tab,
         'pol' :sonu,
         'sag':deep,
