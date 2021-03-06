@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post,Rahul,Table,Contact,Singup,Record,blog
+from .models import Post,Table,Contact,Singup,Record,blog
 from django.contrib import messages
 
 
