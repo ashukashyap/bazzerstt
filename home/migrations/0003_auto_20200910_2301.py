@@ -20,9 +20,5 @@ class Migration(migrations.Migration):
             name='timestemp',
             field=models.CharField(max_length=200),
         ),
-        migrations.AlterField(
-            model_name='rahul',
-            name='time',
-            field=models.CharField(max_length=200),
-        ),
+      
     ]

@@ -20,14 +20,4 @@ class Migration(migrations.Migration):
                 ('count', models.IntegerField(default=0)),
             ],
         ),
-        migrations.CreateModel(
-            name='Rahul',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('time', models.DateTimeField(auto_now_add=True)),
-                ('num', models.IntegerField(default=0)),
-                ('stor', models.IntegerField()),
-            ],
-        ),
     ]
