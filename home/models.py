@@ -16,7 +16,7 @@ class Post(models.Model):
 class Rahul(models.Model):
     name = models.CharField(max_length=200)
     time = models.CharField(max_length=200)
-    no = models.TextField()  
+    num = models.IntegerField()  
     stor = models.TextField()   
 
     def __str__(self):
