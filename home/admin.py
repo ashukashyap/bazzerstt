@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Post,Table,Contact,Singup,Record,blog
+from .models import Post,Table,Contact,Singup,Record,blog,Rahul
 # Register your models here.
 
 
 admin.site.register(Post)
-# admin.site.register(Rahul)
+admin.site.register(Rahul)
 admin.site.register(Table)
 admin.site.register(Contact)
 admin.site.register(Singup)
